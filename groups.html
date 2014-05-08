@@ -13,12 +13,13 @@ root: "../"
 
 
 
-
+ <!--
 <div class=row>
-  <div class="col-sm-12 col-md-12">
-    <h4> </h4>
-    {% for group in site.data.groups %}
-	<div class="thumbnail right-caption">
+    
+  
+    <div class="col-sm-6 col-md-6">
+          {% for group in site.data.groups %}
+  	<div class="thumbnail right-caption">
 	  {% if group.image != null %}
        <img src="{{ page.root }}assets/images/{{ group.image }}"
 	      width="200" height="133" class="img-rounded img-responsive">
@@ -26,25 +27,63 @@ root: "../"
         <img data-src="holder.js/150x150" alt="..." class="img-rounded img-responsive">
       {% endif %}
       <div class="caption">
-        <h4>{{ group.stitle }}: {{ group.ltitle }}<br><small> ({{ group.department }}, {{ group.institute }})</small></h4>
-        <p>{{ group.description }}</p>
-        
-        <!--<h5><small>Who is involved? {% assign andcase = project.people | size | minus: 1 %}{% for collaborator in project.people %}{% assign i = forloop.index0 %}{% assign in_people = false %}{% for person in site.data.people %}{% if in_people == false and person.key == collaborator %}{% if person.url != null %}<a href="{{person.url}}">{{person.fname}}</a>{% else %}{{person.fname}}{% endif %}{{ assign in_people = true }}{% endif %}{% endfor %} ({{project.roles[i]}}){% if forloop.index < forloop.length %}{% if forloop.index < andcase %}, {% else %} and {% endif %}{% endif %}{% endfor %}</small></h5>
--->
+        <p margin:0>{{ group.stitle }}</p>
+        <p style="color:grey;font-size:5px"> {{ group.department }}, {{ group.institute }} </p>
+        <p>{{ group.expertise }} </p>
+    
       </div>
-    </div>
-    {% endfor %}
-    <!--
-      <div class="text-center"><ul class="list-inline">
-        <li><small>PI: Primary Investigators</small></li>
-        <li><small>CI: Co-Investigators</small></li>
-        <li><small>PP: Project Partners</small></li>
-        <li><small>PD: Post Doctoral Research Associates</small></li>
-    </ul></div>
-    <br>
--->
-  </div>
+            </div>
+        
+        {% endfor %}
+            </div>
+      
+
 </div>
+
+-->
+
+<table>
+          {% tablerow group in site.data.groups cols: 2 %}
+<td>
+  	<div class="thumbnail right-caption">
+	  {% if group.image != null %}
+       <img src="{{ page.root }}assets/images/{{ group.image }}"
+	      width="200" height="133" class="img-rounded img-responsive">
+      {% else %}
+        <img data-src="holder.js/150x150" alt="..." class="img-rounded img-responsive">
+      {% endif %}
+      <div class="caption">
+        <p margin:0>{{ group.stitle }}</p>
+        <p style="color:grey;font-size:5px"> {{ group.department }}, {{ group.institute }} </p>
+        <p>{{ group.expertise }} </p>
+    
+      </div>
+            </div>
+        </td>
+        {% endtablerow %}
+     </table>       
+
+<!--
+<table>
+{% tablerow group in site.data.groups cols:3 %}
+  <div class="thumbnail right-caption">
+	  {% if group.image != null %}
+       <img src="{{ page.root }}assets/images/{{ group.image }}"
+	      width="200" height="133" class="img-rounded img-responsive">
+      {% else %}
+        <img data-src="holder.js/150x150" alt="..." class="img-rounded img-responsive">
+      {% endif %}
+      <div class="caption">
+        <p margin:0>{{ group.stitle }}</p>
+        <p style="color:grey;font-size:5px"> {{ group.department }}, {{ group.institute }} </p>
+        <p>{{ group.expertise }}</p>
+    
+      </div>
+            </div>
+{% endtablerow %}
+</table>
+    -->
+   
 
 
 

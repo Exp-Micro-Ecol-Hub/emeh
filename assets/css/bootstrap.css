@@ -466,10 +466,10 @@ h6,
   font-size: 14px;
 }
 p {
-  margin: 0 0 11px;
+  margin: 0px 0px 0px 0px;
 }
 .lead {
-  margin-bottom: 22px;
+  margin-bottom: 0px;
   font-size: 18px;
   font-weight: 200;
   line-height: 1.4;
@@ -4373,7 +4373,7 @@ a.list-group-item.active > .badge,
   color: inherit;
 }
 .jumbotron p {
-  margin-bottom: 15px;
+  margin-bottom: 0px;
   font-size: 24px;
   font-weight: 200;
 }
