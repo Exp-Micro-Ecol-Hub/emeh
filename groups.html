@@ -21,13 +21,14 @@ root: "../"
 	<div class="thumbnail right-caption">
 	  {% if group.image != null %}
        <img src="{{ page.root }}assets/images/{{ group.image }}"
-	      width="300" height="200" class="img-rounded">
+	      width="200" height="133" class="img-rounded img-responsive">
       {% else %}
-        <img data-src="holder.js/150x150" alt="..." class="img-rounded">
+        <img data-src="holder.js/150x150" alt="..." class="img-rounded img-responsive">
       {% endif %}
       <div class="caption">
         <h4>{{ group.stitle }}: {{ group.ltitle }}<br><small> ({{ group.department }}, {{ group.institute }})</small></h4>
         <p>{{ group.description }}</p>
+        
         <!--<h5><small>Who is involved? {% assign andcase = project.people | size | minus: 1 %}{% for collaborator in project.people %}{% assign i = forloop.index0 %}{% assign in_people = false %}{% for person in site.data.people %}{% if in_people == false and person.key == collaborator %}{% if person.url != null %}<a href="{{person.url}}">{{person.fname}}</a>{% else %}{{person.fname}}{% endif %}{{ assign in_people = true }}{% endif %}{% endfor %} ({{project.roles[i]}}){% if forloop.index < forloop.length %}{% if forloop.index < andcase %}, {% else %} and {% endif %}{% endif %}{% endfor %}</small></h5>
 -->
       </div>
@@ -44,6 +45,7 @@ root: "../"
 -->
   </div>
 </div>
+
 
 
 
