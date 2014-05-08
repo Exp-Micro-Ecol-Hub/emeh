@@ -15,26 +15,25 @@ root: "../"
 
     
 {% for group in site.data.groups %}
-    {% cycle 'group1': '<div class=row>', '' %}
+{% cycle 'group1': '<div class=row>', '' %}
  
     <div class="col-sm-6 col-md-6">
-  	<div class="thumbnail right-caption">
-	  {% if group.image != null %}
-       <img src="{{ page.root }}assets/images/{{ group.image }}"
-	      width="200" height="133" class="img-rounded img-responsive">
-      {% else %}
-        <img data-src="holder.js/150x150" alt="..." class="img-rounded img-responsive">
-      {% endif %}
-      <div class="caption">
-        <p margin:0>{{ group.stitle }}</p>
-        <p style="color:grey;font-size:5px"> {{ group.department }}, {{ group.institute }} </p>
-        <p>{{ group.expertise }} </p>
-    
-      </div>
+        <div class="thumbnail right-caption">
+            {% if group.image != null %}
+            <img src="{{ page.root }}assets/images/{{ group.image }}"
+                  width="200" height="133" class="img-rounded img-responsive">
+            {% else %}
+            <img data-src="holder.js/150x150" alt="..." class="img-rounded img-responsive">
+            {% endif %}
+            <div class="caption">
+                <p>{{ group.stitle }}</p>
+                <p style="color:grey;font-size:70%"> {{ group.department }}, {{ group.institute }}  </p>
+                <p>{{ group.expertise }} </p>
             </div>
-     </div>
-    {% cycle 'group2': '', '</div>' %}
-  {% endfor %}
+        </div>
+    </div>
+{% cycle 'group2': '', '</div>' %}
+{% endfor %}
   
     <!--
     {{ forloop.index }}
