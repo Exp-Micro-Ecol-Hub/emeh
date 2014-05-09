@@ -20,22 +20,22 @@
     website1: http://homepages.eawag.ch/~altermfl/Home.html
     website2: null
    
-  - stitle: Altermatt Group2
-    ltitle: Spatial ecology and ecosystems
-    department: Institute of Evolutionary Biology and Environmental Studies / Department of Aquatic Ecology
-    institute: University of Zurich / EAWAG
-    image: altermatt.png
-    expertise: Spatial ecology
-    ldescription: With our work we want to understand how species occur in space and time, how they interact, and how processes such as species invasions, dispersal or climate change affect natural communities. Metapopulation and metacommunity theory provide a conceptual framework for our research. We use both an experimental and a comparative approach, and integrate them with theoretical models.
-    website1: http://homepages.eawag.ch/~altermfl/Home.html
+  - stitle: Fox Group
+    ltitle: null
+    department: Dept. of Biological Sciences
+    institute: University of Calgary
+    image: jfox.jpg
+    expertise: Coexistence, synchrony, biodiversity-ecosystem functioning
+    ldescription: null
+    website1: http://homepages.ucalgary.ca/%7Ejefox/Home.htm
     website2: null
 
-  - stitle: Altermatt Group3
-    ltitle: Spatial ecology and ecosystems
-    department: Institute of Evolutionary Biology and Environmental Studies / Department of Aquatic Ecology
-    institute: University of Zurich / EAWAG
-    image: altermatt.png
-    expertise: Spatial ecology
-    ldescription: With our work we want to understand how species occur in space and time, how they interact, and how processes such as species invasions, dispersal or climate change affect natural communities. Metapopulation and metacommunity theory provide a conceptual framework for our research. We use both an experimental and a comparative approach, and integrate them with theoretical models.
-    website1: http://homepages.eawag.ch/~altermfl/Home.html
+  - stitle: Jiang Group
+    ltitle: null
+    department: School of Biology
+    institute: Georgia Institute of Technology
+    image: jiang.jpeg
+    expertise: Pylogenetic community ecology, biodiversity-ecosystem functioning, community assembly
+    ldescription: null
+    website1: http://www.biology.gatech.edu/people/lin-jiang
     website2: null
