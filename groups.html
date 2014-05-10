@@ -16,26 +16,31 @@ root: "../"
 {% for group in site.data.groups %}
 {% cycle 'group1': '<div class="row">', '' %}
  
-    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-        <div class="thumbnail right-caption" background:#ffffff>
-            {% if group.image != null %}
-            <img src="{{ page.root }}assets/images/{{ group.image }}"
-                  width="200" height="133" class="img-rounded img-responsive">
-            {% else %}
-            <img data-src="holder.js/150x150" alt="..." class="img-rounded img-responsive">
-            {% endif %}
-            <div class="caption">
-                <p>{{ group.stitle }}</p>
-                <p style="color:grey;font-size:70%"> {{ group.department }}<br>{{ group.institute }}</p>
-                <p>{{ group.expertise }} </p>
-                <p style="font-size:12px"><a href="{{ group.website1 }}"  target="_blank"> <i class="fa fa-hand-o-right fa-1x fa-fw", style="color:grey"></i>website1</a>
-                {% if group.website2 != null %}
-                <a href="{{ group.website2 }}"  target="_blank"> <i class="fa fa-hand-o-right fa-1x fa-fw", style="color:grey"></i>website2</a></p>
-                   {% endif %}
-            </div>
-        </div>
+    <div class="col-sm-3">
+        {% if group.image != null %}
+        <img src="{{ page.root }}assets/images/{{ group.image }}"
+              width="200" height="133" class="img-rounded img-responsive">
+        {% else %}
+        <img data-src="holder.js/150x150" alt="..." class="img-rounded img-responsive">
+        {% endif %}
+</div>
+
+
+    <div class="col-sm-3">
+        <p>{{ group.stitle }}</p>
+        <p style="color:grey;font-size:70%"> {{ group.department }}<br>{{ group.institute }}</p>
+        <p>{{ group.expertise }} </p>
+        <p style="font-size:12px"><a href="{{ group.website1 }}"
+                                     target="_blank">
+            <i class="fa fa-hand-o-right fa-1x fa-fw", style="color:grey"></i>website1</a>
+            {% if group.website2 != null %}
+            <a href="{{ group.website2 }}"  target="_blank">
+                <i class="fa fa-hand-o-right fa-1x fa-fw", style="color:grey"></i>website2</a></p>
+        {% endif %}
+      {% cycle 'group2': '<br>', '', 'here<br><br>','' %}
+  
     </div>
-{% cycle 'group2': '', '</div>' %}
+{% cycle 'group3': '', '</div> <br>' %}
 {% endfor %}
   
     <!--
