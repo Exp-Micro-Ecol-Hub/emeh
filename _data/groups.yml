@@ -1,6 +1,6 @@
 ---
   - stitle: Petchey Group
-    ltitle: Causes and consequences of extinctions
+    ltitle: null
     department: Institute of Evolutionary Biology and Environmental Studies
     institute: University of Zurich
     image: petchey.png
@@ -9,7 +9,7 @@
     website2: http://www.thetrophiclink.org
     
   - stitle: Altermatt Group
-    ltitle: Spatial ecology and ecosystems
+    ltitle: null
     department: Institute of Evolutionary Biology and Environmental Studies / Department of Aquatic Ecology
     institute: University of Zurich / EAWAG
     image: altermatt.png
@@ -45,4 +45,31 @@
     expertise: Host-parasite coevolution, clonal variation
     ldescription: null
     website1: http://tu-dresden.de/die_tu_dresden/fakultaeten/fakultaet_forst_geo_und_hydrowissenschaften/fachrichtung_wasserwesen/ihb
+    website2: null
+
+  - stitle: Kaltz group
+    ltitle: null
+    department: Evolutionary community ecology group
+    institute: Université Montpellier
+    image: oliver.jpg
+    expertise: Evolutionary ecology of host-parasite interactions
+    website1: http://www.eec.univ-montp2.fr/people/oliver-kaltz/
+    website2: null
+
+  - stitle: Morin group
+    ltitle: null
+    department: Department of Ecology, Evolution & Natural Resources
+    institute: Rutgers University
+    image: morin.jpeg
+    expertise: Community ecology, biodiversity and ecoystem functioning, networks, inducible trophic polymorphisms
+    website1: http://www.rci.rutgers.edu/~pjmorin/index.html
+    website2: null
+
+  - stitle: new3
+    ltitle: null
+    department: null
+    institute: null
+    image: petchey.png
+    expertise: Community and food web ecology
+    website1: http://www.ieu.uzh.ch/research/ecology/extinction.html
     website2: null
