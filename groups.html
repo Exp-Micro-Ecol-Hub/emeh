@@ -16,21 +16,19 @@ root: "../"
 {% for group in site.data.groups %}
 {% cycle 'group1': '<div class="row">', '' %}
 
-<div class="col-sm-4 col-md-4 well well-sm">
-
-<!--    <div class="col-md-6">-->
+<div class="col-sm-6 col-md-6 col-lg-6">
+    <div class="well">
+    <div class="col-md-5 col-lg-5">
         {% if group.image != null %}
         <img src="{{ page.root }}assets/images/{{ group.image }}"
               width="200" height="133" class="img-rounded img-responsive">
         {% else %}
         <img data-src="holder.js/150x150" alt="..." class="img-rounded img-responsive">
         {% endif %}
-<!--
     </div>
 
 
-    <div class="col-md-6">
--->
+    <div class="col-sm-6 col-md-6 col-lg-6">
         <p>{{ group.stitle }}</p>
         <p style="color:grey;font-size:70%">{{ group.institute }}</p>
         <p>{{ group.expertise }} </p>
@@ -42,7 +40,8 @@ root: "../"
                 <i class="fa fa-hand-o-right fa-1x fa-fw", style="color:grey"></i>website2</a></p>
         {% endif %}
       {% cycle 'group2': '<br>', '', '<br><br>','' %}
-<!--    </div>-->
+    </div>
+        </div>
 </div>
     
 {% cycle 'group3': '', '</div> <br><br>' %}
