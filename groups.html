@@ -17,7 +17,7 @@ root: "../"
 {% cycle 'group1': '<div class="row">', '' %}
 
 <div class="col-sm-6 col-md-6 col-lg-6">
-    <div class="well">
+  
     <div class="col-md-5 col-lg-5">
         {% if group.image != null %}
         <img src="{{ page.root }}assets/images/{{ group.image }}"
@@ -39,10 +39,10 @@ root: "../"
             <a href="{{ group.website2 }}"  target="_blank">
                 <i class="fa fa-hand-o-right fa-1x fa-fw", style="color:grey"></i>website2</a></p>
         {% endif %}
-      {% cycle 'group2': '<br>', '', '<br><br>','' %}
+      {% cycle 'group2': '<br>', '', '<br>','' %}
     </div>
         </div>
-</div>
+
     
 {% cycle 'group3': '', '</div> <br><br>' %}
 {% endfor %}
