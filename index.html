@@ -5,104 +5,107 @@ post-limit: 5
 root: "./"
 ---
 
-<!--
-{% for post in site.posts %}
-<div class="modal" id="{{ forloop.index | prepend: "modal_id" }}" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-        <h4 class="modal-title" id="myModalLabel">{{ post.title }}</h4>
-      </div>
-      <div class="modal-body">
-        {{ post.content }}
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-      </div>
+<div class="row">
+  <div class="col-sm-7 col-md-8">
+    <h3 class>Welcome</h3>
+    <hr>
+    Welcome to the Experimental Microbial Ecology (EME) Hub, the aim of which is to help connect EME researchers, to communicate EME relevant material, and to perhaps even create some new initiatives. This site will always be a work in progress, so please let us know how it could be improved (or even help out).
+  </div> 
+  
+  
+  
+  <div class="col-sm-5 col-md-4">
+    <div class="well">
+      <h3> Contact us </h3>
+      <p>This site is maintained by Owen Petchey. Please get in touch if you'd like to contribute.</p>
+      <br> 
+      <!--   <p class="text-left"><a data-toggle="modal" data-target="#op-tweets"><i class="fa fa-twitter-square fa-lg fa-fw"></i></a>&nbsp;OwenPetchey</p>
+	     <p class="text-left"><i class="fa fa-skype fa-lg fa-fw"></i>&nbsp;owen.petchey</p>
+	     -->
+      <p class="text-left"><i class="fa fa-envelope fa-lg fa-fw"></i>&nbsp;owen.petchey@ieu.uzh.ch</p>
+      <p class="text-left"><i class="fa fa-phone fa-lg
+				     fa-fw"></i>&nbsp;(+41)&nbsp;(0)44&nbsp;635&nbsp;4770</p>
+      <br>
+      <p class="text-left">
+	<small>Institute of Evolutionary Biology and Environmental Studies<br>University of Zurich</small>
+      </p>
     </div>
   </div>
-</div>
-{% endfor %}
-
-<div class="modal twitter-modal" id="op-tweets" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-        <h4 class="modal-title" id="myModalLabel">Tweets</h4>
-      </div>
-      <div class="modal-body">
-          
-	<a class="twitter-timeline" href="https://twitter.com/owenpetchey" data-widget-id="442323518550585344" data-chrome="nofooter noheader noborders transparent" width="520">Tweets by @OwenPetchey</a><script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-
-      </div>
-      <div class="modal-footer">
-        <a type="button" class="btn btn-default" href="https://twitter.com/OwenPetchey"><i class="fa fa-twitter fa-lg fa-fw"></i>Follow</a>
-      </div>
-    </div>
-  </div>
-</div>
-
--->
-
-<!--
-<div class="well text-center">
-      <h4><i class="fa fa-wrench fa-fw"></i> This website is still under contruction <i class="fa fa-wrench fa-fw"></i></h4>
-</div>
--->
-
-
-<!--
-<div class="row">
-<div class="col-sm-7 col-md-8">
-  <h3 class>News and Opportunities</h3>
-  <hr>
-  <ul class="list-unstyled">
-    {% for post in site.posts limit:page.post-limit %}
-      <li>
-        <h4><a data-toggle="modal" data-target="{{ forloop.index | prepend: "#modal_id" }}">{{ post.title }}</a> <small>{{ post.date | date_to_string }}</small></h4>
-        <p>{{ post.excerpt }}</p>
-      </li>
-    {% endfor %}
-	<hr>
-	{% if site.posts.size > page.post-limit %}
-	  <p class="text-center"><a href="{{ site.url}}news/index.html">Old News</a></p>
-	{% endif %}
-  </ul>
-  <br>
-</div>
--->
-
-<div class="row">
-<div class="col-sm-7 col-md-8">
-  <h3 class>Welcome</h3>
-  <hr>
-    Welcome to the Experimental Microbial Ecology Hub (EMEH), the aim of which is to help connect EMEH researchers, to communicate EMEH relevant material, and to perhaps even create some new initiatives. This site will always be a work in progress, so please let us know how it could be improved (or even help out).
-   </div> 
-    
-    
-
-
-<div class="col-sm-5 col-md-4">
-  <div class="well">
-    <h3> Contact us </h3>
-    <p>This site is maintained by Owen Petchey. Please get in touch if you'd like to contribute.</p>
-    <br> 
- <!--   <p class="text-left"><a data-toggle="modal" data-target="#op-tweets"><i class="fa fa-twitter-square fa-lg fa-fw"></i></a>&nbsp;OwenPetchey</p>
-    <p class="text-left"><i class="fa fa-skype fa-lg fa-fw"></i>&nbsp;owen.petchey</p>
--->
-    <p class="text-left"><i class="fa fa-envelope fa-lg fa-fw"></i>&nbsp;owen.petchey@ieu.uzh.ch</p>
-    <p class="text-left"><i class="fa fa-phone fa-lg
-	fa-fw"></i>&nbsp;(+41)&nbsp;(0)44&nbsp;635&nbsp;4770</p>
-	<br>
-	<p class="text-left">
-       <small>Institute of Evolutionary Biology and Environmental Studies<br>University of Zurich</small>
-	</p>
-  </div>
-</div>
 </div>
 
 <div class="row">
   <p>{{ paginator.posts }}</p>
 </div>
+
+
+
+<!--
+    {% for post in site.posts %}
+    <div class="modal" id="{{ forloop.index | prepend: "modal_id" }}" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+	<div class="modal-content">
+	  <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            <h4 class="modal-title" id="myModalLabel">{{ post.title }}</h4>
+	  </div>
+	  <div class="modal-body">
+            {{ post.content }}
+	  </div>
+	  <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+	  </div>
+	</div>
+      </div>
+    </div>
+    {% endfor %}
+    
+    <div class="modal twitter-modal" id="op-tweets" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+	<div class="modal-content">
+	  <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            <h4 class="modal-title" id="myModalLabel">Tweets</h4>
+	  </div>
+	  <div class="modal-body">
+            
+	    <a class="twitter-timeline" href="https://twitter.com/owenpetchey" data-widget-id="442323518550585344" data-chrome="nofooter noheader noborders transparent" width="520">Tweets by @OwenPetchey</a><script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+	    
+	  </div>
+	  <div class="modal-footer">
+            <a type="button" class="btn btn-default" href="https://twitter.com/OwenPetchey"><i class="fa fa-twitter fa-lg fa-fw"></i>Follow</a>
+	  </div>
+	</div>
+      </div>
+    </div>
+    
+    -->
+
+<!--
+    <div class="well text-center">
+      <h4><i class="fa fa-wrench fa-fw"></i> This website is still under contruction <i class="fa fa-wrench fa-fw"></i></h4>
+    </div>
+    -->
+
+
+<!--
+    <div class="row">
+      <div class="col-sm-7 col-md-8">
+	<h3 class>News and Opportunities</h3>
+	<hr>
+	<ul class="list-unstyled">
+	  {% for post in site.posts limit:page.post-limit %}
+	  <li>
+            <h4><a data-toggle="modal" data-target="{{ forloop.index | prepend: "#modal_id" }}">{{ post.title }}</a> <small>{{ post.date | date_to_string }}</small></h4>
+            <p>{{ post.excerpt }}</p>
+	  </li>
+	  {% endfor %}
+	  <hr>
+	  {% if site.posts.size > page.post-limit %}
+	  <p class="text-center"><a href="{{ site.url}}news/index.html">Old News</a></p>
+	  {% endif %}
+	</ul>
+	<br>
+      </div>
+      -->
+
+
