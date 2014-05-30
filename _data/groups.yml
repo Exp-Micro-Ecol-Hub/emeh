@@ -1,5 +1,5 @@
 ---
-  - stitle: Petchey Group
+  - stitle: Petchey group
     ltitle: null
     department: Institute of Evolutionary Biology and Environmental Studies
     institute: University of Zurich
@@ -8,7 +8,7 @@
     website1: http://www.ieu.uzh.ch/research/ecology/extinction.html
     website2: http://www.thetrophiclink.org
     
-  - stitle: Altermatt Group
+  - stitle: Altermatt group
     ltitle: null
     department: Institute of Evolutionary Biology and Environmental Studies / Department of Aquatic Ecology
     institute: University of Zurich / EAWAG
@@ -17,7 +17,7 @@
     website1: http://homepages.eawag.ch/~altermfl/Home.html
     website2: null
    
-  - stitle: Fox Group
+  - stitle: Fox group
     ltitle: null
     department: Dept. of Biological Sciences
     institute: University of Calgary
@@ -27,7 +27,7 @@
     website1: http://homepages.ucalgary.ca/%7Ejefox/Home.htm
     website2: null
 
-  - stitle: Jiang Group
+  - stitle: Jiang group
     ltitle: null
     department: School of Biology
     institute: Georgia Institute of Technology
@@ -37,7 +37,7 @@
     website1: http://www.biology.gatech.edu/people/lin-jiang
     website2: null
 
-  - stitle: Berendonk Group
+  - stitle: Berendonk group
     ltitle: null
     department: Institute for Hydrobiology
     institute: Technical University of Dresden
@@ -65,11 +65,30 @@
     website1: http://www.rci.rutgers.edu/~pjmorin/index.html
     website2: null
 
-  - stitle: new3
+  - stitle: Warren / Childs groups
     ltitle: null
-    department: null
-    institute: null
-    image: petchey.png
+    department: Department of Animal and Plant Sciences
+    institute: University of Sheffield
+    image: warren.jpg
     expertise: Community and food web ecology
-    website1: http://www.ieu.uzh.ch/research/ecology/extinction.html
-    website2: null
+    website1: http://www.shef.ac.uk/aps/staff-and-students/acadstaff/warren
+    website2: http://www.shef.ac.uk/aps/staff-and-students/acadstaff/childs
+    
+  - stitle: Schtickzelle group
+    ltitle: null
+    department: Earth and Life Institute
+    institute: Université catholique de Louvain
+    image: schtickzelle.jpg
+    expertise: Metapopulations
+    website1: http://www.uclouvain.be/en-81772.html
+    website2: 
+
+  - stitle: Peterman group
+    ltitle: null
+    department: Institute of Biology
+    institute: Freie Universität Berlin
+    image: peterman.jpg
+    expertise: Multitrophic biodiversity
+    website1: http://www.bcp.fu-berlin.de/en/biologie/arbeitsgruppen/zoologie/ag_petermann/People/index.html
+    website2: 
+    
