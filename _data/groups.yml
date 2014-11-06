@@ -102,13 +102,11 @@
     website1: http://www.bcp.fu-berlin.de/en/biologie/arbeitsgruppen/zoologie/ag_petermann/People/index.html
     website2:
     
- - stitle: Help group
+  - stitle: Petermann1 group
     ltitle: null
-    department: xxx
-    institute: xxx
-    image: peterman.jpg
-    expertise: xxx
-    website1: xxx
-    website2: 
-     
-
+    department: Institute of Biology1
+    institute: Freie Universität Berlin1
+    image: peterman1.jpg
+    expertise: Multitrophic biodiversity1
+    website1: http://www.bcp.fu-berlin.de/en/biologie/arbeitsgruppen/zoologie/ag_petermann/People/index1.html
+    website2:
